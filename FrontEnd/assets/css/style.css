@@ -567,6 +567,11 @@ ul :last-child{
         font-size: 1.3rem;
     }
 }
+@media screen and (max-width: 470px) {
+    .glide__bullets{
+        bottom: -0.4rem;
+    }
+}
 @media screen and (max-width: 400px) {
     .bg-patther-1{
         background-size: 130%;
@@ -577,8 +582,5 @@ ul :last-child{
     }
     body{
         min-width: 400px;
-    }
-    .glide__bullets{
-        bottom: -0.5rem;
     }
 }
