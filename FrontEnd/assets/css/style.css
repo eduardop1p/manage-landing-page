@@ -90,6 +90,10 @@ li{
 
 .menus{
     list-style: none; 
+    gap: 1rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     gap: 2rem;
 }
