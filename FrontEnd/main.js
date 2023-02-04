@@ -80,7 +80,7 @@ class Manage{
         <a href="https://www.instagram.com/yfg.eduardo/" target="_blank" rel="noopener noreferrer">
           @yfg.eduardo
         </a>`
-    }
-}
+    } 
+} 
 const manage = new Manage()
 manage.init()

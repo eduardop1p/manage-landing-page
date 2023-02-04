@@ -90,8 +90,11 @@ li{
 
 .menus{
     list-style: none; 
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-}
+} 
 .menus > li{
     transition: color 0.2s ease-in-out;
 
@@ -614,4 +617,6 @@ footer{
     body{
         min-width: 400px;
     }
+
 }
+
