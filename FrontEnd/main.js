@@ -81,6 +81,6 @@ class Manage{
           @yfg.eduardo
         </a>`
     } 
-} 
+}
 const manage = new Manage()
 manage.init()

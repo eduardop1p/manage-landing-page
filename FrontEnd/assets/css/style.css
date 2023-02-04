@@ -95,9 +95,6 @@ li{
     display: -ms-flexbox;
     display: flex;
 } 
-.menu-hambuguer{
-    display: none;
-}
 .menus > li{
     transition: color 0.2s ease-in-out;
 
@@ -321,7 +318,7 @@ footer{
 }
 
 .menu-hambuguer{
-    cursor: pointer;
+    display: none;
 }
 .glide__bullets{
     display: none;
@@ -335,6 +332,7 @@ footer{
         margin-right: 0;
     }
     .menu-hambuguer{
+        cursor: pointer;
         width: 25px;
         display: flex;
         flex-direction: column;
