@@ -11,8 +11,9 @@ class Manage{
     }
     init(){
         this.menuCliked() 
-        this.viewPortMaxWidth516()
+        this.viewPortMaxWidth600()
         this.viewPortMenuFooter()
+        this.copyright()
     }
     menuCliked(){
         const menu = document.querySelector('.menu')
@@ -24,8 +25,8 @@ class Manage{
             menu.toggleAttribute('data-menuInBlur')
         })
     }
-    viewPortMaxWidth516(){
-        const mediaQueryList = window.matchMedia('(max-width: 516px)')
+    viewPortMaxWidth600(){
+        const mediaQueryList = window.matchMedia('(max-width: 600px)')
         this.screenOnChangeSlide(mediaQueryList)
         mediaQueryList.addEventListener('change', event => this.screenOnChangeSlide(event))
     }
@@ -72,6 +73,13 @@ class Manage{
         inputFooter.insertAdjacentElement('beforeend', arrayElementsMenuFooter[1])
         logoFooter.insertAdjacentElement('beforeend', arrayElementsMenuFooter[0])
         this.footerSection2.querySelectorAll('.appendMenuFooter').forEach(appendMenuFooter => appendMenuFooter.remove())
+    }
+    copyright(){
+        const copyrightElement = this.footerSection2.querySelector('.copyright')
+        copyrightElement.innerHTML = `Copyright ${new Date().getFullYear()}. Todos os direitos reservados a
+        <a href="https://www.instagram.com/yfg.eduardo/" target="_blank" rel="noopener noreferrer">
+          @yfg.eduardo
+        </a>`
     }
 }
 const manage = new Manage()
