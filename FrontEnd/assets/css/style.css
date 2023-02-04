@@ -95,6 +95,9 @@ li{
     display: -ms-flexbox;
     display: flex;
 } 
+.menu-hambuguer{
+    display: none;
+}
 .menus > li{
     transition: color 0.2s ease-in-out;
 
